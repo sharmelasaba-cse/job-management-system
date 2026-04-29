@@ -1,0 +1,13 @@
+# Ignore Firebase / sensitive JSON files
+google-services.json
+*.json
+
+# Or more specific (better)
+app/google-services.json
+
+# Android default ignores
+.gradle/
+local.properties
+/build
+/captures
+.externalNativeBuild

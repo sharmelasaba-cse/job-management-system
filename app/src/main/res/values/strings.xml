@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Job Management System</string>
+    <string name="login_title">Login</string>
+    <string name="signup_title">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="no_account">Don\'t have an account? Sign Up</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="welcome_msg">Welcome to Job Management System</string>
+    <string name="success_login">You are successfully logged in!</string>
+    <string name="btn_logout">Logout</string>
+
+    <!-- Role Selection -->
+    <string name="role_selection_title">Select Your Role</string>
+    <string name="role_selection_subtitle">Choose how you want to continue</string>
+    <string name="role_admin">Admin</string>
+    <string name="role_employee">Employee</string>
+
+    <!-- Dashboards -->
+    <string name="admin_dashboard_title">Admin Dashboard</string>
+    <string name="employee_dashboard_title">Employee Dashboard</string>
+    <string name="welcome_admin">Welcome, Admin!</string>
+    <string name="welcome_employee">Welcome, Employee!</string>
+    <string name="manage_jobs">Manage Jobs</string>
+    <string name="manage_jobs_desc">Post, update, or delete job listings.</string>
+    <string name="view_employees">View Employees</string>
+    <string name="view_employees_desc">Monitor employee activities and performance.</string>
+    <string name="available_jobs">Available Jobs</string>
+    <string name="available_jobs_desc">Browse and apply for current job openings.</string>
+    <string name="my_applications">My Applications</string>
+    <string name="my_applications_desc">Check the status of your submitted applications.</string>
+</resources>
