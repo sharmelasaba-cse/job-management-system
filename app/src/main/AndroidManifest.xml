@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions for Internet and Storage -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -34,8 +39,37 @@
             android:exported="false" />
 
         <activity
+            android:name=".CreateJobActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AssignJobActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MonitorProgressActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ViewReportsActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".EmployeeDashboardActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".AssignedJobsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".JobDetailsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:label="Profile" />
 
         <activity
             android:name=".MainActivity"

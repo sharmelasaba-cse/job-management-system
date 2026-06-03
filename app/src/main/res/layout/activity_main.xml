@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/background_light"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/primary_blue"
             app:title="@string/app_name"
             app:titleTextColor="@color/white" />
 
@@ -32,9 +32,10 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:contentPadding="24dp">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:contentPadding="24dp"
+            app:cardBackgroundColor="@color/white">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,13 +43,21 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@android:drawable/ic_dialog_info"
+                    android:layout_marginBottom="16dp"
+                    app:tint="@color/primary_blue"
+                    android:contentDescription="@string/app_name" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/welcome_msg"
-                    android:textSize="20sp"
+                    android:textSize="22sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
+                    android:textColor="@color/primary_blue"
                     android:gravity="center"
                     android:layout_marginBottom="8dp" />
 
@@ -56,8 +65,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/success_login"
-                    android:textSize="14sp"
-                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
                     android:gravity="center" />
 
             </LinearLayout>
@@ -65,11 +74,13 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogout"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn_logout"
-            android:layout_marginTop="32dp" />
+            android:layout_marginTop="32dp"
+            android:textColor="@color/primary_blue"
+            app:strokeColor="@color/primary_blue" />
 
     </LinearLayout>
 

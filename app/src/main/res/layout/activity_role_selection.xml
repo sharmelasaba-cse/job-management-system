@@ -4,26 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
     android:gravity="center"
-    android:background="#FFFFFF">
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/role_selection_title"
-        android:textSize="28sp"
+        android:text="@string/app_name"
+        android:textSize="32sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_marginBottom="8dp"
         android:gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/role_selection_subtitle"
-        android:textSize="16sp"
-        android:textColor="#666666"
+        android:text="@string/role_selection_title"
+        android:textSize="20sp"
+        android:textColor="#E0E0E0"
         android:layout_marginBottom="48dp"
         android:gravity="center" />
 
@@ -32,33 +32,50 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="4dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
         android:clickable="true"
         android:focusable="true"
-        app:rippleColor="?attr/colorControlHighlight">
+        app:rippleColor="@color/secondary_blue"
+        app:cardBackgroundColor="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="32dp"
-            android:gravity="center">
+            android:orientation="horizontal"
+            android:padding="24dp"
+            android:gravity="center_vertical">
 
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@android:drawable/ic_lock_lock"
-                android:layout_marginBottom="16dp"
-                app:tint="?attr/colorPrimary" />
+                app:tint="@color/primary_blue"
+                android:background="#E8EAF6"
+                android:padding="12dp"
+                android:contentDescription="@string/role_admin" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/role_admin"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:orientation="vertical"
+                android:layout_marginStart="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/role_admin"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manage_jobs"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -66,33 +83,50 @@
         android:id="@+id/cardEmployee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="4dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
         android:clickable="true"
         android:focusable="true"
-        app:rippleColor="?attr/colorControlHighlight">
+        app:rippleColor="@color/secondary_blue"
+        app:cardBackgroundColor="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="32dp"
-            android:gravity="center">
+            android:orientation="horizontal"
+            android:padding="24dp"
+            android:gravity="center_vertical">
 
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@android:drawable/ic_menu_myplaces"
-                android:layout_marginBottom="16dp"
-                app:tint="?attr/colorPrimary" />
+                app:tint="@color/primary_blue"
+                android:background="#E8EAF6"
+                android:padding="12dp"
+                android:contentDescription="@string/role_employee" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/role_employee"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:orientation="vertical"
+                android:layout_marginStart="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/role_employee"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/assigned_jobs"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 

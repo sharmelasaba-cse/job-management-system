@@ -3,6 +3,7 @@
     <string name="login_title">Login</string>
     <string name="signup_title">Sign Up</string>
     <string name="username">Username</string>
+    <string name="login_hint">Email, Mobile or Username</string>
     <string name="password">Password</string>
     <string name="full_name">Full Name</string>
     <string name="confirm_password">Confirm Password</string>
@@ -33,4 +34,50 @@
     <string name="available_jobs_desc">Browse and apply for current job openings.</string>
     <string name="my_applications">My Applications</string>
     <string name="my_applications_desc">Check the status of your submitted applications.</string>
+
+    <string name="quick_actions">Quick Actions</string>
+    <string name="my_jobs">My Jobs</string>
+    <string name="in_progress">In Progress</string>
+    <string name="assigned">Assigned</string>
+
+    <!-- Admin Features -->
+    <string name="total_jobs">Total Jobs</string>
+    <string name="completed_jobs">Completed</string>
+    <string name="pending_jobs">Pending</string>
+    <string name="create_new_job">Create New Job</string>
+    <string name="assign_job">Assign Job</string>
+    <string name="monitor_progress">Monitor Progress</string>
+    <string name="view_reports">View Reports</string>
+    <string name="mgmt_actions">Management Actions</string>
+
+    <!-- Employee Features -->
+    <string name="assigned_jobs">Assigned Jobs</string>
+    <string name="assigned_jobs_desc">View and manage jobs assigned to you.</string>
+    <string name="check_job_details">Job Details</string>
+    <string name="update_job_status">Update Status</string>
+    <string name="btn_start_job">Start Job</string>
+    <string name="btn_complete_job">Complete Job</string>
+    <string name="btn_update_progress">Update Progress</string>
+
+    <!-- Create Job -->
+    <string name="create_job_title">Create New Job</string>
+    <string name="job_title">Job Title</string>
+    <string name="job_description">Description</string>
+    <string name="category">Category</string>
+    <string name="due_date">Due Date</string>
+    <string name="priority">Priority</string>
+    <string name="priority_high">High</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_low">Low</string>
+    <string name="btn_create_job">Create Job</string>
+    <string name="select_image">Select Image</string>
+
+    <!-- Labels -->
+    <string name="label_deadline">Deadline: %1$s</string>
+    <string name="label_assigned_to">Worker: %1$s</string>
+    <string name="label_status">Status: %1$s</string>
+    <string name="label_location">Location: %1$s</string>
+    <string name="label_priority">Priority: %1$s</string>
+    <string name="label_category">Category: %1$s</string>
+    <string name="label_progress">Progress: %1$d%%</string>
 </resources>
